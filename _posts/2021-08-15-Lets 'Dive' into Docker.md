@@ -1,4 +1,5 @@
-![[wallpaperflare.com_wallpaper.jpg]]
+![wallpaperflare com_wallpaper](https://user-images.githubusercontent.com/106372696/170817260-0d2320cb-7a02-4a85-9951-e41a7a47b10a.jpg)
+
 
 Hi Everyone,
 
@@ -50,7 +51,7 @@ brew install dive
 sudo port install dive
 ```
 
-*There are some other ways to install this one, check out if you want : *
+Note: There are some other ways to install this one, check out if you want :
 https://github.com/wagoodman/dive
 
 ##### Dive usage :
@@ -74,15 +75,14 @@ Fetching image... (this can take a while for large images)
 Analyzing image...
 Building cache...
 ```
-
-![[Pasted image 20220528123917.png]]
+![dive1](https://user-images.githubusercontent.com/106372696/170817468-2c641f38-d511-40e9-9dcb-8866fafb9bc1.png)
 
 As you can see this image has seven layers and dive give us detailed information about each layer. Dive has four section start from the top we could see Layers follwed by layer details, image details and finally current layer contents.
 - Layers: In this panel shows layer size and the command we include in the docker file.
 
 - Layer Details: This panel contains layer ID and hash and command used in the layer.
 
-![[Pasted image 20220528134247.png]]
+![dive2](https://user-images.githubusercontent.com/106372696/170817476-f6ace312-2cfe-49a9-a53f-a173181bf682.png)
 
 - Current layer contents: It contains the files of the each layer, you can use arrow keys and tab key to navigate with them. While scrolling you can see some files in **green**,**yellow** and **red** color. Green indicates newly added files and Orange indicated modified files and Red means Deleted files in the layer.
 
