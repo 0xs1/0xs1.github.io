@@ -2,8 +2,8 @@
 {% for post in posts %}
   <article>
     {% include meta.html post=post preview=false %}
-    {{ post.excerpt }}
-    <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
+    {% if post.content > post.excerpt.size %}
+        <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
   </article>
 {% endfor %}
 
