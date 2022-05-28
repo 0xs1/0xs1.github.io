@@ -1,4 +1,4 @@
-title: "Hi,Welcome to My Blog"
+title: "Welcome to My Blog"
 author: "n1_X"
 description: "In life we can have results or reasons... <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
@@ -17,7 +17,7 @@ minimal: true             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html", icon: home}
-  - {file: "about.md", title: About, icon: user-secret}
+  - {file: "About.md", title: About, icon: user-secret}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Github, icon: github, url: "https://github.com/nsparker1337"}
