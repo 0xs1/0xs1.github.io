@@ -1,12 +1,13 @@
 ## Powerview for AD Enumeration
 * Get Current Domain : Get-NetDomain
- * Enum other Domain : Get-NetDomain -Domain (Domain Name)
- * Get Domain sid : Get-DomainSID
+* Enum other Domain : Get-NetDomain -Domain (Domain Name)
+* Get Domain sid : Get-DomainSID
+
 ### Get Domain Policy : 
 ```bash
 Get-DomainPolicy
 
-#Will show us the policy configurations of the Domain about system access or kerberos
+#Will show us the policy configurations of the Domain about system access or kerberos.
 (Get-DomainPolicy)."system access"
 (Get-DomainPolicy)."kerberos policy"
 ```
