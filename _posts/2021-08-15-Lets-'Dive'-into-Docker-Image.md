@@ -90,13 +90,13 @@ As you can see this image has seven layers and dive give us detailed information
 
 ##### Alright let's go the distance, How can we keep our docker image slim and good..
 There are some ways to shrink your docker image
-###### 1. Use small Images as much as possible (like alpine linux).
+##### 1. Use small Images as much as possible (like alpine linux).
 - Alpine image is very small less than 10MB and easy to use.
 
-###### 2. Use .dockerignore file.
+##### 2. Use .dockerignore file.
 - Similar to .gitignore file that exclude unnecessary files for your image.
 
-###### 3. Avoid multiple layering.
+##### 3. Avoid multiple layering.
 - Lets take an Example
 
 ```bash
