@@ -5,7 +5,7 @@ Hi Everyone,
 
 This is the story about how I managed to takeover some one account using password reset flaw on the website.While browsing the website I need to signin to the account but It was a long time ago since I logged into my account.so, I can't remember my password so I decided to reset my password, but suddendly I decide to play with password reset functionality if I can reset someone's account.
 	
-##### Attempt 1:
+#### Attempt 1:
 I intercept the traffic with Burpsuite and capture the request and saw something like this
 
 ```bash
@@ -35,7 +35,7 @@ POST /ResetPassword
 
 And of course its failed only reset token sent to myemail1 account not myemail2 account.
 
-##### Never Give Up:
+#### Never Give Up:
 After that I tried some other methods like following
 
 ```bash
@@ -70,7 +70,7 @@ Then I decided to send the report to their security team, but they don't have VD
 
 	Note: You can find security.txt by https://www.website.com/.well-known/security.txt
 	
-##### Other methods to check password related issues:
+#### Other methods to check password related issues:
 ```bash
 POST /ResetPassword
 
@@ -111,8 +111,8 @@ I don't do bug bounties but this one I accidently try my luck and got success..T
 
 Usefull Resources :
 
-https://portswigger.net/web-security/host-header/exploiting/password-reset-poisoning
+[Password Reset Poisoning - Portswigger](https://portswigger.net/web-security/host-header/exploiting/password-reset-poisoning)
 
-https://anugrahsr.github.io/posts/10-Password-reset-flaws/
+[10 Password Reset Flaws - AnugrahSR](https://anugrahsr.github.io/posts/10-Password-reset-flaws/)
 
-https://infosecwriteups.com/all-about-password-reset-vulnerabilities-3bba86ffedc7?gi=5037f755d2b2
+[All about Password Reset Vulnerablities - Infosec Writeups](https://infosecwriteups.com/all-about-password-reset-vulnerabilities-3bba86ffedc7?gi=5037f755d2b2)
