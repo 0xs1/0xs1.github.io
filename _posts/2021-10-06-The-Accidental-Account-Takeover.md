@@ -3,7 +3,7 @@
 
 Hi Everyone,
 
-This is the story about how I managed to takeover some one account using password reset flaw on the website.While browsing the website I need to signin to the account but It was a long time ago since I logged into my account.so, I can't remember my password so I decided to reset my password, but suddendly I decide to play with password reset functionality if I can reset someone's account.
+This is the brief story about how I managed to takeover someone account using password reset flaw on the website.While browsing the website I need to signin to the account but It was a long time ago since I logged into my account.so, I can't remember my password so I decided to reset my password, but suddendly I decide to play with password reset functionality if I can reset someone's account.
 	
 #### Attempt 1:
 I intercept the traffic with Burpsuite and capture the request and saw something like this
