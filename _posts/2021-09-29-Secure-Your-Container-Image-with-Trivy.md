@@ -27,12 +27,12 @@ According to the official documentation from Aquasecurity **Trivy** (tri pronoun
       
 	  $ yum install trivy
 	  ```
-	
-  	Mac :
+
+    Mac :
   
-	  ```bash
+    ```bash
 	  $ brew install trivy
-	  ```
+    ```
 
 2. Easy to Use
 	- Just specify the Image name, Config files, filesystem directory and remote git directory. You can also save your image locally then use trivy.  
